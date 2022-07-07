@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(number) {
+        for (let i = 2; i < number; i++){
+            if (number % i == 0 ){
+                return false
+            }
+        }
+        return number >= 2
+    }
+    number=+prompt('Nhập số nguyên dương')
+    isPrime()
+    document.write(isPrime(number))
+</script>
+</body>
+</html>
